@@ -1,0 +1,20 @@
+ORIGINAL OCEAN RENDERER
+
+web-ocean by Maksymilian Dendura (Noniv)
+Copyright (c) 2026 Maksymilian Dendura. MIT License.
+Source: https://github.com/Noniv/web-ocean
+Original live demo: https://ocean-noniv.vercel.app/
+
+This local simulation is an independent adaptation. Weather, wildlife, reef,
+shoreline, tours, wallpaper hosts, installers and updates were added to that
+original renderer. The original author does not endorse this adaptation.
+The original MIT license is included in ORIGINAL-OCEAN-LICENSE.txt.
+
+THIRD-PARTY MODELS AND TEXTURES
+
+See assets/README.md, assets/premade/README.md and
+assets/premade/replacement-catalog.json for asset-specific credits and licenses.
+Some wildlife assets are licensed for non-commercial use only. Distribution
+of this package does not grant permission for commercial use of those assets.
+
+Electron and Microsoft WebView2 retain their own bundled license notices.

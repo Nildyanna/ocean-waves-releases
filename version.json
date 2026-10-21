@@ -1,0 +1,8 @@
+{
+  "version": "0.1.0",
+  "channel": "stable",
+  "releaseRepository": "Nildyanna/ocean-waves-releases",
+  "manifestUrl": "https://github.com/Nildyanna/ocean-waves-releases/releases/latest/download/update-manifest.json",
+  "originalAuthor": "Maksymilian Dendura (Noniv)",
+  "originalSource": "https://github.com/Noniv/web-ocean"
+}
