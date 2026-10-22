@@ -4,9 +4,9 @@ Download the [latest release](https://github.com/Nildyanna/ocean-waves-releases/
 
 ## Choose a package
 
-- **Windows x64:** `Ocean-Setup-0.1.2-Windows-x64.exe`. The installer offers interactive browser view, live desktop wallpaper, or both. Browser mode uses your WebGPU-capable browser and needs no Python. Wallpaper uses Microsoft WebView2; the installer includes Microsoft's runtime bootstrapper if needed. The wallpaper starts its coastal/reef tour by default.
-- **Linux x86-64:** `Ocean-Setup-0.1.2-Linux-x86_64.run`. Run `sh Ocean-Setup-0.1.2-Linux-x86_64.run`. Choose browser, wallpaper, or both. The full package includes Electron. GNOME and KDE Plasma adapters cover X11/Wayland; other X11 desktops use a desktop-layer window.
-- **Linux browser only:** `Ocean-Simulation-0.1.2-Linux.tar.gz`. Extract, then `sh Launch-Ocean.sh`. Python 3.9+ and a current browser with working WebGPU/GPU drivers are required. OpenSSL is needed for signed updates.
+- **Windows x64:** `Ocean-Setup-0.1.3-Windows-x64.exe`. The installer offers interactive browser view, live desktop wallpaper, or both. Browser mode uses your WebGPU-capable browser and needs no Python. Wallpaper uses Microsoft WebView2; the installer includes Microsoft's runtime bootstrapper if needed. The wallpaper starts its coastal/reef tour by default.
+- **Linux x86-64:** `Ocean-Setup-0.1.3-Linux-x86_64.run`. Run `sh Ocean-Setup-0.1.3-Linux-x86_64.run`. Choose browser, wallpaper, or both. The full package includes Electron. GNOME and KDE Plasma adapters cover X11/Wayland; other X11 desktops use a desktop-layer window.
+- **Linux browser only:** `Ocean-Simulation-0.1.3-Linux.tar.gz`. Extract, then `sh Launch-Ocean.sh`. Python 3.9+ and a current browser with working WebGPU/GPU drivers are required. OpenSSL is needed for signed updates.
 
 Windows installer selection, local serving, signature verification and uninstallation were tested. Linux installation, local serving and signed updates were tested under WSL. **Linux wallpaper GPU presentation and native GNOME/Plasma placement remain experimental and unverified:** WSL rendering tests failed to present the scene correctly. Consult `linux/README.md` inside the Linux package for dependencies and desktop setup. Installation does not automatically enable extensions or replace wallpaper settings.
 
@@ -21,7 +21,7 @@ WASD moves, mouse-look changes view, both mouse buttons held moves forward, T st
 Download the package, its matching `.sig`, and `PUBLIC-KEY.pem`. With OpenSSL:
 
 ```sh
-openssl dgst -sha256 -verify PUBLIC-KEY.pem -signature Ocean-Setup-0.1.2-Linux-x86_64.run.sig Ocean-Setup-0.1.2-Linux-x86_64.run
+openssl dgst -sha256 -verify PUBLIC-KEY.pem -signature Ocean-Setup-0.1.3-Linux-x86_64.run.sig Ocean-Setup-0.1.3-Linux-x86_64.run
 ```
 
 Use the same command with the Windows installer or browser archive filenames. `SHA256SUMS` and `update-manifest.json` have separate signatures. The updater pins this RSA-3072 public key and checks signed package hashes and sizes before installation. Obtain the key from a trusted first installation or this repository. Detached release signatures are not Windows Authenticode certificates; Windows may show an unknown-publisher warning.
